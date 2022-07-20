@@ -11,7 +11,6 @@ describe("Greeter class", () => {
   });
   test("greeting and name returned", () => {
     const greeter = new Greeter("Howdy");
-    const result = Greeter.greet("Zakir");
-    expect(result).toBe("Howdy, Zakir!");
+    expect(greeter.greet("Zakir")).toBe("Howdy, Zakir!");
   });
 });
